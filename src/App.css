@@ -2,6 +2,31 @@
   text-align: center;
 }
 
+.container {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.board {
+  width: 600px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  grid-auto-rows: minmax(100px, 200px);
+}
+
+.cell {
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-reset {
+  margin-top: 20px;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
